@@ -5,7 +5,6 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class ConcurrentCollectionHashMap {
 
@@ -27,7 +26,6 @@ public class ConcurrentCollectionHashMap {
      */
     public static void usingConcurrentMap(){
 
-        System.out.println("=== ConcurrentHashMap ===");
         ExecutorService executor = Executors.newCachedThreadPool();
         Random random = new Random();
         ConcurrentHashMap valuesPerUuid = new ConcurrentHashMap<UUID, Integer>();
