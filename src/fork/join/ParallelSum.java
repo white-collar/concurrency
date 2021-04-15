@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 import java.util.stream.LongStream;
 
 public class ParallelSum extends RecursiveTask<BigInteger> {
-
+    // my cool comment
     private static final long serialVersionUID = 1L;
-    private final static int THRESHOLD = 10_000;
+    private final static int THRESHOLD = 100_000;
 
     private List<BigInteger> nums;
 
